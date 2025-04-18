@@ -32,6 +32,14 @@ def get_logs():
         },
         {
             "wallet": "0xabc",
+            "token": "HBAR",
+            "price": 0.1658,
+            "volatility": 0.10,
+            "ratio": 150,
+            "notes": "High volatility, extra collateral buffer applied"
+        },
+        {
+            "wallet": "0xabc",
             "token": "USDC",
             "price": 1.00,
             "volatility": 0.01,
