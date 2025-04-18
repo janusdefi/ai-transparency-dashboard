@@ -1,0 +1,7 @@
+🔍 Dashboard Features
+🔁 Live AI Decisions	Show latest AI stabilization + yield decisions
+📈 Volatility Inputs	Token volatility metrics driving AI logic
+🧠 AI Ratio Recommendations	What collateral ratios are recommended and why
+🔍 Audit Trail	Log of recent AI evaluations with parameters + outputs
+✅ Explainable Models (XAI)	Descriptive logic (e.g., “High volatility → higher ratio”)
+⏱️ Real-Time Proof-of-Reserve	Display total backing, price feeds, and collateral composition
