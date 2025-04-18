@@ -1,5 +1,6 @@
 import React from 'react'
 import TransparencyPanel from './components/TransparencyPanel'
+import AIChartPanel from './components/AIChartPanel'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           Janus AI Transparency Dashboard
         </h1>
         <TransparencyPanel />
+        <AIChartPanel />
       </div>
     </div>
   )

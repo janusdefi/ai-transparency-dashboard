@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { LineChart, Line, ResponsiveContainer } from 'recharts'
+
 
 function getRiskColor(ratio) {
   if (ratio <= 130) return 'text-janus-green'
@@ -41,6 +43,23 @@ export default function TransparencyPanel() {
         </div>
         <div className="text-xs italic text-gray-400">
           Reason: {log.reason || "No explanation"} (PID: {log.pid_value ?? "–"})
+          <ResponsiveContainer width="100%" height={40}>
+  <LineChart
+    data={[
+      { pid: (log.pid_value ?? 0) - 0.02 },
+      { pid: log.pid_value ?? 0 },
+      { pid: (log.pid_value ?? 0) + 0.01 }
+    ]}
+  >
+    <Line
+      type="monotone"
+      dataKey="pid"
+      stroke="#341164"
+      dot={false}
+      strokeWidth={2}
+    />
+  </LineChart>
+</ResponsiveContainer>
         </div>
       </>
     ) : (
@@ -54,9 +73,13 @@ export default function TransparencyPanel() {
           Suggested Ratio: {log.ratio}%
         </div>
         <div className="text-xs italic text-gray-400">{log.notes}</div>
+      
       </>
+      
     )}
+    
   </div>
+  
 ))}
 
       </div>
