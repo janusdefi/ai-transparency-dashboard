@@ -37,5 +37,25 @@ def get_logs():
             "volatility": 0.01,
             "ratio": 130,
             "notes": "Low volatility — reduced requirement"
+        },
+        {
+            "type": "nudge",
+            "token": "ALPHA",
+            "target": 1.00,
+            "observed": 1.03,
+            "nudge": "burn",
+            "amount": 1200,
+            "reason": "Observed price exceeded target",
+            "pid_value": 0.07
+        },
+        {
+            "type": "nudge",
+            "token": "OMEGA",
+            "target": 1.00,
+            "observed": 0.95,
+            "nudge": "mint",
+            "amount": 800,
+            "reason": "Below peg; mint to incentivize demand",
+            "pid_value": -0.04
         }
     ]
