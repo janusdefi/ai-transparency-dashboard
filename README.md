@@ -22,7 +22,7 @@ The **Janus AI Transparency Dashboard** provides real-time visibility into decis
 | Backend API | FastAPI (Python)       |
 | Proxy       | Vite dev server proxy  |
 | Styling     | Tailwind CSS + custom brand colors |
-| Hosting     | Optional: Netlify, Vercel, etc. |
+| Hosting     | Variable |
 
 ---
 
